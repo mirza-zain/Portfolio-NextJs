@@ -15,9 +15,9 @@ const Navbar = () => {
       <div className='h-16 w-full flex text-white justify-between p-5 items-center'>
         <h1 className='font-pacifico text-3xl text-[#E40037]'>MirzaZain</h1>
         {mobVisible ? (
-            <i className="ri-close-fill text-2xl font-bold z-50" onClick={toggleButton}></i>
+            <i className="ri-close-fill text-2xl font-bold z-50 md:hidden" onClick={toggleButton}></i>
           ) : (
-            <i className="ri-menu-4-line text-2xl font-bold" onClick={toggleButton}></i>
+            <i className="ri-menu-4-line text-2xl font-bold md:hidden" onClick={toggleButton}></i>
           )}
           <div className="hidden md:flex" >
               <nav className="flex gap-6 font-poppins text-lg font-bold" >

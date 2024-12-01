@@ -34,7 +34,7 @@ const Navbar = () => {
           </div>
       </div>
       {mobVisible && (
-        <div className='w-full h-screen bg-black flex flex-col justify-center items-center fixed md:hidden'>
+        <div className='w-full h-screen bg-black flex flex-col justify-center items-center fixed md:hidden z-40'>
           <nav className="flex flex-col justify-center items-center gap-8 font-poppins text-lg font-bold" >
             <Link href="/" className = {path === "/" ? "text-[#E40037]" : "text-white"} >Home</Link>
             <Link href="/about" className = {path === "/about" ? "text-[#E40037]" : "text-white"} >About</Link>

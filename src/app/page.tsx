@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useTypewriter, Cursor } from "react-simple-typewriter"
 import Lottie from 'lottie-react'
 import Hero from './Images/Astronot.json'
@@ -11,18 +11,7 @@ export default function Home() {
     loop: true,
     typeSpeed: 100,
     deleteSpeed: 80
-  });
-
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  if (!isClient) {
-    return null; // or a loading spinner, or some fallback content
-  }
-
+  })
   return (
     <div className="w-full h-full flex flex-1">
       <div className="w-full absolute top-1/3 md:top-1/3 left-1/2 -translate-x-1/2 ">

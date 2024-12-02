@@ -2,8 +2,8 @@
 
 import React from 'react'
 // import { useTypewriter, Cursor } from "react-simple-typewriter"
-import Lottie from 'lottie-react'
-import Hero from './Images/Astronot.json'
+// import Lottie from 'lottie-react'
+// import Hero from './Images/Astronot.json'
 
 export default function Home() {
   // const [text] = useTypewriter({
@@ -21,9 +21,9 @@ export default function Home() {
           <Cursor cursorColor='white' cursorStyle='|' />
         </p> */}
       </div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2">
+      {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2">
         <Lottie className="h-[250px] w-[350px] md:h-[300px] md:w-[300px]" animationData={Hero} />
-      </div>
+      </div> */}
     </div>
   );
 }

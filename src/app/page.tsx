@@ -1,9 +1,12 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { useTypewriter, Cursor } from "react-simple-typewriter"
-import Lottie from 'lottie-react';
-import hero from './Images/Astronot.json';
+import dynamic from 'next/dynamic'
+import hero from './Images/Astronot.json'
+
+// Dynamically import the Lottie component
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false })
 
 export default function Home() {
   const [text] = useTypewriter({
@@ -11,7 +14,8 @@ export default function Home() {
     loop: true,
     typeSpeed: 100,
     deleteSpeed: 80
-  })
+  });
+
   return (
     <div className="w-full h-full flex flex-1">
       <div className="w-full absolute top-1/3 md:top-1/3 left-1/2 -translate-x-1/2 ">
@@ -22,7 +26,7 @@ export default function Home() {
         </p>
       </div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2">
-        <Lottie animationData={hero} className="h-[250px] w-[350px] md:h-[300px] md:w-[300px]"  />
+        <Lottie animationData={hero} className="h-[250px] w-[350px] md:h-[300px] md:w-[300px]" />
       </div>
     </div>
   );

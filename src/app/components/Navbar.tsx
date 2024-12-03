@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       <div className='h-16 w-full flex flex-1 text-white justify-between p-5 items-center'>
-        <h1 className='font-pacifico text-3xl text-[#E40037]'>MirzaZain</h1>
+        <h1 className='font-pacifico text-3xl text-[#E40037]'><a href='/' className="no-underline">MirzaZain</a></h1>
         {mobVisible ? (
             <i className="ri-close-fill text-2xl font-bold z-50 md:hidden" onClick={toggleButton}></i>
           ) : (

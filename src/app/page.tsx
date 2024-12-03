@@ -10,7 +10,7 @@ const Lottie = dynamic(() => import('lottie-react'), { ssr: false })
 
 export default function Home() {
   const [text] = useTypewriter({
-    words: ['Software Engineer', 'Full Stack Developer'],
+    words: ['Software Engineer', 'Full Stack Dev'],
     loop: true,
     typeSpeed: 100,
     deleteSpeed: 80

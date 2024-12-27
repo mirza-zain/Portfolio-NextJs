@@ -10,7 +10,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, imageSrc, altText, description }) => {
   return (
-    <div className="w-full h-full md:w-[40%] md:h-[50%] mx-auto border-4 border-[#E40037]">
+    <div className="w-full h-full md:w-[40%] md:h-[50%] mx-auto border-4 border-[#E40037] overflow-hidden">
       <div className="relative w-full h-full text-black bg-white group">
         <Image src={imageSrc} className="w-full h-full object-cover" alt={altText} />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-[#E40037] bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity">

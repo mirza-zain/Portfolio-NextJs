@@ -2,6 +2,7 @@ import ProjectCard from '../components/ProjectCard';
 import Pro1 from '../Images/pro1.png'; 
 import Pro2 from '../Images/pro2.png';
 import Pro3 from '../Images/pro3.png';
+import "./pro.css"
 
 const projects = [
   { title: 'Resume Builder', imageSrc: Pro1, altText: 'pro 1', description: "lorem2" },
@@ -12,7 +13,7 @@ const projects = [
 
 const Project = () => {
   return (
-    <div className="w-full h-full flex flex-col flex-1 p-8">
+    <div className="w-full h-full flex flex-col flex-1 p-8 overflow-hidden scrollbar-hide">
       <h2 className="text-5xl font-lobster font-bold m-6 text-center">My Work</h2>
       <div className="flex flex-wrap justify-center gap-8">
         {projects.map((project, index) => (

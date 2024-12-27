@@ -1,22 +1,32 @@
-import Image from 'next/image'
-import Demo from '../Images/demo.png'
+import ProjectCard from '../components/ProjectCard';
+import Pro1 from '../Images/pro1.png'; 
+import Pro2 from '../Images/pro2.png';
+import Pro3 from '../Images/pro3.png';
+
+const projects = [
+  { title: 'Resume Builder', imageSrc: Pro1, altText: 'pro 1', description: "lorem2" },
+  { title: 'My Hero Academia Fan Web', imageSrc: Pro2, altText: 'pro 2', description: "lorem2" },
+  { title: 'One Piece Fan Web', imageSrc: Pro3, altText: 'pro 3', description: "lorem2" },
+  // Add more projects as needed
+];
 
 const Project = () => {
   return (
     <div className="w-full h-full flex flex-col flex-1 p-8">
-      <h2 className="text-5xl font-lobster font-bold m-5 text-center">My Work</h2>
-      <div className="w-[22%] h-3 bg-[#E40037] m-5 translate-x-1/2 "></div>
-      <div className="w-[45%] h-[55%] mx-auto border-4 border-[#E40037]">
-        <div className="relative w-full h-full text-black bg-white group">
-          <Image src={Demo} className="w-full h-full object-cover" alt="demo" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-[#E40037] bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity">
-            <h3 className="text-2xl font-lobster">Demo Project</h3>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, soluta.</span>
-          </div>
-        </div>
+      <h2 className="text-5xl font-lobster font-bold m-6 text-center">My Work</h2>
+      <div className="flex flex-wrap justify-center gap-8">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.title}
+            imageSrc={project.imageSrc}
+            altText={project.altText}
+            description={project.description}
+          />
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

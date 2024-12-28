@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import React from 'react';
-import ThankYou from '../thankyou/page'
 
 export const metadata: Metadata = {
   title: "Contact Me",
@@ -12,7 +11,7 @@ const Contact = () => {
       <div className="w-full md:w-1/2">
         <h2 className="text-3xl md:text-5xl font-bold font-lobster mb-6 mt-5 text-[#4A90E2]">Connect With Me</h2>
         <p className="text-lg md:text-xl font-semibold font-poppins w-full md:w-4/5 text-left md:text-justify">
-          Feel free to contact with me for any inquiries, collaborations, or just to say hello. I'm always open to connecting with new people and exploring new opportunities.
+          Feel free to contact with me for any inquiries, collaborations, or just to say hello. I&apos;m always open to connecting with new people and exploring new opportunities.
         </p>
         <form className='flex flex-col' action="https://formsubmit.co/mirzazain269@gmail.com" method="POST">
           <div className='flex flex-col md:flex-row mt-4'>

@@ -14,7 +14,7 @@ const projects = [
 const Project = () => {
   return (
     <div className="w-full h-full flex flex-col flex-1 p-8 overflow-hidden scrollbar-hide">
-      <h2 className="text-5xl font-lobster font-bold m-6 text-center">My Work</h2>
+      <h2 className="text-3xl md:text-6xl font-lobster font-bold m-6 text-center text-[#4A90E2]">My Work</h2>
       <div className="flex flex-wrap justify-center gap-8">
         {projects.map((project, index) => (
           <ProjectCard

@@ -25,9 +25,9 @@ export default function Home() {
   return (
     <div className="w-full h-full flex flex-1">
       <div className="w-full absolute top-1/3 md:top-1/3 left-1/2 -translate-x-1/2 ">
-        <h1 className="text-5xl text-center md:text-7xl font-poppins font-bold text-white">Mirza Zain</h1>
+        <h1 className="text-5xl text-center md:text-7xl font-poppins font-bold text-[#4A90E2]">Mirza Zain</h1>
         <p className='text-center absolute top-3/4 left-1/2 -translate-x-1/2 translate-y-2/3 font-bold text-sm md:text-2xl font-poppins'>
-          I&apos;m a <span className='text-[#E40037]'>{text}</span>
+          I&apos;m a <span className='text-[#D0021B]'>{text}</span>
           <Cursor cursorColor='white' cursorStyle='|' />
         </p>
       </div>

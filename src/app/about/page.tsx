@@ -6,7 +6,7 @@ const About = () => {
     <div className="w-full h-full flex flex-1 p-4 md:p-8">
       <div className="w-full flex flex-col md:flex-row mt-5 overflow-hidden">
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl md:text-5xl font-bold font-lobster mb-6 mt-5">About Me</h2>
+          <h2 className="text-3xl md:text-6xl font-bold font-lobster mb-6 mt-5 text-[#4A90E2]">About Me</h2>
           <p className="text-lg md:text-xl font-semibold font-poppins w-full md:w-4/5 text-left md:text-justify">Dedicated front-end web developer with a strong foundation in HTML, CSS, JavaScript, React and Next JS. 
             Currently pursuing a Software Engineering degree at SMIU University. 
             Proven ability to create intuitive user interfaces and collaborate effectively within teams. 

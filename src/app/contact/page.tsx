@@ -20,7 +20,7 @@ const Contact = () => {
           </div>
           <textarea className="mt-2 mb-2 mx-2 w-[95%] md:w-2/3 md:h-1/2 p-4 border-2 border-[#D0021B] text-black" name='message' placeholder="Just say Hello 🙂" />
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="/thankyou" />
+          <input type="hidden" name="_next" value="https://mirzaportfolio.vercel.app/thankyou" />
           <button className='mx-2 w-1/4 px-4 py-2 bg-yellow-400 text-[#D0021B] hover:bg-[#D0021B] hover:text-yellow-500 text-lg font-poppins font-bold border-2 border-[#4A90E2]' type="submit">Send</button>
         </form>
       </div>

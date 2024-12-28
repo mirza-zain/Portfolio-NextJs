@@ -1,8 +1,13 @@
+import { Metadata } from 'next';
 import ProjectCard from '../components/ProjectCard';
 import Pro1 from '../Images/pro1.png'; 
 import Pro2 from '../Images/pro2.png';
 import Pro3 from '../Images/pro3.png';
 import "./pro.css"
+
+export const metadata: Metadata = {
+  title: "Project",
+};
 
 const projects = [
   { title: 'Resume Builder', imageSrc: Pro1, altText: 'pro 1', description: "lorem2" },

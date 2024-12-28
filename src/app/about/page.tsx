@@ -1,5 +1,10 @@
 import Image from 'next/image'
 import Profile from '../Images/profile.png'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "About",
+};
 
 const About = () => {
   return (
